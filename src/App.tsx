@@ -46,7 +46,7 @@ function App() {
                     <div className="md: mx-2">
                         {/* forecast */}
                         <div
-                            className={`w-72 mt-9 h-60 mx-auto bg-[url(../public/images/bg-today-small.svg)] flex flex-col items-center md:bg-[url(../public/images/bg-today-large.svg)] md:w-full md:flex-row md:justify-between md:p-6 bg-cover rounded-2xl `}
+                            className={`w-72 mt-9 h-60 mx-auto bg-[url(../public/images/bg-today-small.svg)] flex flex-col items-center md:bg-[url(/images/bg-today-large.svg)] md:w-full md:flex-row md:justify-between md:p-6 bg-cover rounded-2xl `}
                         >
                             <div className="text-center md:text-start">
                                 <h2 className=" mt-7">
