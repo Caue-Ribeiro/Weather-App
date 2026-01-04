@@ -1,6 +1,6 @@
 import searchIcon from '../../public/images/icon-search.svg'
 
-const SearchInput: React.FC = () => {
+const SearchInput: React.FC<{ isPending: boolean }> = ({ isPending }) => {
     return (
         <form className="flex flex-col w-2xs m-auto gap-2.5 md:flex-row md:w-96 md:justify-center ">
             <div className="flex gap-1.5 bg-gray_2 px-2 rounded-md ">
@@ -16,8 +16,9 @@ const SearchInput: React.FC = () => {
             <button
                 type="submit"
                 className="bg-purple_1 hover:bg-purple_2 transition-colors rounded-md text-white p-2.5 cursor-pointer font-DM font-semibold md:px-4"
+                disabled={isPending}
             >
-                search
+                {isPending ? 'searching' : 'search'}
             </button>
         </form>
     )
