@@ -25,7 +25,11 @@ type HourlyForecastType = {
 export const useWeatherData = (addressInfo: MapProperties[] | undefined) => {
     const { windSpeed, precipitation, userCurrentLocation } = useGlobalContext()
 
-    const { lat, lon } = addressInfo ? addressInfo[0] : userCurrentLocation
+    const location =
+        addressInfo && addressInfo.length > 0
+            ? addressInfo[0]
+            : userCurrentLocation
+    const { lat, lon } = location
 
     const { data } = useWeatherSearch(Number(lat), Number(lon))
 

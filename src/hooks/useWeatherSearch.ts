@@ -40,7 +40,7 @@ export const useWeatherSearch = (lat: number, lon: number) => {
     }
 
     return useQuery({
-        queryKey: ['weather', temperatureUnit, windSpeed],
+        queryKey: ['weather', temperatureUnit, windSpeed, lat, lon],
         queryFn: async () => {
             const response = await fetchWeatherApi(urlWeather, params)
 
