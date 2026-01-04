@@ -2,7 +2,16 @@
 
 A weather forecast application built to practice modern React concepts, API consumption, and asynchronous state management.
 
-![Project Preview](public/preview.png) ## 🚀 Technologies
+🔗 **Live Demo:** [weathernoow.netlify.app](https://weathernoow.netlify.app)
+
+<div align="center">
+<img src="public/images/web.webp" alt="Preview do projeto" width="600">
+</div>
+<div align="center">
+<img src="public/images/mobile.webp" alt="Preview do projeto" width="200">
+</div>
+
+## 🚀 Technologies
 
 -   **Core:** React, TypeScript, Vite
 -   **Styling:** Tailwind CSS
